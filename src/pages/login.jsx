@@ -19,22 +19,24 @@ export default function Login() {
             required
             > 
             </input>
+                           <a style={{textDecoration:'none' ,color:'violet',fontSize:'10px',textAlign:'center',fontWeight:'bold',marginTop:'5px'}}href="#">Forgot Password?</a>
+
              </div>
+             
             
            
             <div className="rememberme-forgot">
-               <label style={{fontSize:'15px',fontWeight:'bold',color:'violet'}}> <input  type="checkbox"/>Remember me</label>
+             
                 <button className="btn-login">
                   LOGIN
             </button>
               
-               <a style={{textDecoration:'none' ,color:'violet',fontSize:'10px',textAlign:'center',fontWeight:'bold',marginTop:'5px'}}href="#">Forgot Password</a>
                </div> 
            
              
             <div className="create">
              <div>
-               Dont have an account  ? , <a style={{color:'violet'}} href="#">Register !!</a></div>   
+             <span>Dont have an account ? </span> <a  href="#">Register</a></div>   
 
             </div>
 

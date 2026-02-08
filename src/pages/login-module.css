@@ -19,9 +19,14 @@
 .inputs{
     display: flex;
     margin-bottom: 10px;
+    flex-direction: column;
     
     
 
+    
+}
+.inputs a{
+    margin-right: 150px;
     
 }
 .input-btn{
@@ -33,6 +38,12 @@
     outline: none;
     background-color: violet;
     accent-color: black;
+    width: 250px;
+    
+}
+.input-btn::placeholder{
+    color : purple;
+    font-weight: bolder;
 
     
 }
@@ -42,24 +53,61 @@
     flex-direction: column;
     align-items: center;
     row-gap: 5px;
+    text-align: center;
 
     
 
 }
 
 .btn-login{
-    font-weight: bold;
+    font-weight: bolder;
     height: 30px;
     width:120px;
     border-radius: 30px;
-    border: 0.5;
-    border-color: rgba(238, 130, 238, 0.238);
-    background-color: rgb(146, 98, 228);
-    color: rgb(58, 9, 103);
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right , purple , violet);
+    color: white;
+    box-shadow: 0px 0px 3px rgba(78, 7, 81, 0.632); 
+    transition-duration: 1s;
+}
+.btn-login:hover{
+    font-weight: bolder;
+    height: 30px;
+    width:120px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right , violet , purple);
+    color: white;
     box-shadow: 0px 0px 3px rgba(78, 7, 81, 0.632); 
 }
 .create{
     font-weight: bold;
     font-size: 10px ;
     margin-top: 20px;
+    font-family: sans-serif;
+}
+.wrapper h1{
+  background : linear-gradient(to right , rgb(231, 161, 231) , rgb(201, 160, 254));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.create span{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.567);
+}
+.create a{
+    font-size: 12px;
+    font-weight: bold;
+   color :violet;
+   text-decoration: none;
+   transition: 1s;
+}
+.create a:hover{
+    font-size: 12px;
+    font-weight: bold;
+   color :white;
+   text-decoration: underline;
 }
